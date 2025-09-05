@@ -70,16 +70,6 @@ iPhone 14 pro (393x1071)
 
 ---
 
-## 📂 Project Structure
-
-mortgage-calculator/
-│── index.html        # Main HTML file
-│── style.css         # Styles
-│── script.js         # Logic and functionality
-│── assets/           # (Optional) images/screenshots/icons
-
-
----
 
 ## 📱 Responsiveness
 
