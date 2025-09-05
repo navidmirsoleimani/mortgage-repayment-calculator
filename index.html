@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="left-sec">
+      <header>
+        <h1>Mortgage Calculator</h1>
+        <span id="clear-span" style="font-size: 14px ; text-decoration: underline; color: hsl(203, 28%, 56%); cursor: pointer;">Clear All</span>
+      </header>
+        <form id="form" action="">
+          <div class="input-box" id="mortgage-amount">
+            <h4 class="label">Mortgage Amount</h4>
+            <div class="text-input" >
+              <h4 id="amount-placeholder" class="placeholder">$</h4>
+              <input id="mortgage-amount-input" type="number">
+            </div>
+            <span id="amount-error" class="error-msg">This field is required</span>
+          </div>
+          <div id="middle-form">
+            <div class="input-box" id="mortgage-term">
+              <h4  class="label">Mortgage Term</h4>
+              <div class="text-input">
+                <input id="mortgage-term-input" type="number">
+                <h4 id="term-placeholder" class="placeholder">years</h4>
+              </div>
+              <span id="term-error" class="error-msg">This field is required</span>
+            </div>
+            <div class="input-box" id="interest-rate">
+              <h4  class="label">Interest Rate </h4>
+              <div class="text-input">
+                <input id="interest-rate-input" type="number">
+                <h4 id="rate-placeholder" class="placeholder">%</h4>
+              </div>
+              <span id="rate-error" class="error-msg">This field is required</span>
+            </div>
+          </div>
+          <div id="select-form">
+            <h4 style="margin-bottom: 0px;" class="label">Mortgage Type</h4>
+            <div id="repayment-radio" class="checkbox">
+              <input style="cursor: pointer;" name="type" value="repayment" type="radio" id="repayment">
+              <h4>Repayment</h4>
+            </div>
+            <div id="interest-radio"  class="checkbox">
+              <input style="cursor: pointer;" name="type" value="interest-only" type="radio" id="interest-only">
+              <h4>Interest Only</h4>
+            </div>
+            <span id="type-error">This field is required</span>
+          </div>
+          <div id="submit-input">
+            <img src="assets/images/icon-calculator.svg" alt="">
+            <h4>Calculate Repayments</h4>
+          </div>
+        </form>
+    </div>
+    <div id="right-sec">
+      <div style="display: unset; animation: opac 2s forwards;" id="empty-results">
+        <div id="svg-holder">
+          <img src="assets/images/illustration-empty.svg" alt="failed">
+        </div>
+        <div id="results">
+          <h2>Results shown here</h3>
+          <p>Complete the form and click “calculate repayments” to see what 
+            your monthly repayments would be.</p>
+        </div>
+      </div>
+      <div style="display: none; animation: opac 2s forwards;" id="showing-results">
+        <div id="results-des">
+          <h2>Your results</h2>
+          <p>
+            Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments” again.
+          </p>
+        </div>
+        <div id="result-box">
+          <div id="monthly-sec">
+            <h3>Your monthly repayments</h3>
+            <h1 id="monthly-amount" style="color: hsl(61, 70%, 52%);">$0</h1>
+          </div>
+          <div id="total-sec">
+            <h3>Total you'll repay over the term</h3>
+            <h4 id="total-amount" >$0</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
