@@ -51,9 +51,6 @@ iPhone 14 pro (393x1071)
 
 
 
-```
-
----
 
 ## 🛠️ Built With
 
@@ -75,26 +72,12 @@ iPhone 14 pro (393x1071)
 
 ## 📂 Project Structure
 
-```
 mortgage-calculator/
 │── index.html        # Main HTML file
 │── style.css         # Styles
 │── script.js         # Logic and functionality
 │── assets/           # (Optional) images/screenshots/icons
-```
 
----
-
-## ⚙️ How to Use
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/mortgage-calculator.git
-   ```
-2. Open `index.html` in your browser.
-3. Enter your loan details (amount, term, rate, repayment type).
-4. Click **Calculate** to see monthly and total repayments.
 
 ---
 
