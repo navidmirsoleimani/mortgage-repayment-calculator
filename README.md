@@ -28,7 +28,8 @@ Error handling is included for missing or invalid inputs.
 
 ## 📸 Demo
 
-🔗 [Live Demo](#) 
+🔗 [Live Demo](#https://navidmirsoleimani.github.io/mortgage-repayment-calculator/) 
+https://navidmirsoleimani.github.io/mortgage-repayment-calculator/
 
 Macbook Air (1559x975) initial state
 <img width="1559" height="975" alt="Macbook-Air-1559x975-clear" src="https://github.com/user-attachments/assets/3315c13a-4356-4a2c-b6cd-2c02c1de92d0" />
